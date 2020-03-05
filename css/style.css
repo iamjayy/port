@@ -37,6 +37,11 @@
 
 /* General styles */
 
+/* endable this to add smooth scrolling */
+/* html {
+    scroll-behavior: smooth;
+} */
+
 body {
   background: var(--clr-light);
   color: var(--clr-dark);
@@ -191,6 +196,26 @@ header {
   right: 1em;
   top: 1em;
   z-index: 1000;
+}
+
+.nav-open .nav {
+  transform: translateX(0);
+}
+
+.nav-open .nav-toggle {
+  position: fixed;
+}
+
+.nav-open .hamburger {
+  transform: rotate(0.625turn);
+}
+
+.nav-open .hamburger::before {
+  transform: rotate(90deg) translateX(-6px);
+}
+
+.nav-open .hamburger::after {
+  opacity: 0;
 }
 
 .hamburger {
@@ -431,4 +456,12 @@ header {
 
 .social-list__link {
   padding: 0.5em;
+}
+
+/* Individual portfolio item styles */
+
+.portfolio-item-individual {
+  padding: 0 2em 2em;
+  max-width: 1000px;
+  margin: 0 auto;
 }
