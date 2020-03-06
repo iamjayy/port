@@ -37,9 +37,10 @@
 
 /* General styles */
 
-html {
+/* html {
   scroll-behavior: smooth;
 }
+*/
 
 body {
   background: var(--clr-light);
@@ -455,6 +456,23 @@ header {
 
 .social-list__link {
   padding: 0.5em;
+}
+
+.social-center {
+  text-align: center;
+  width: 10%;
+  height: 10%;
+  float: left;
+}
+
+.images {
+  text-align: center;
+  padding: 10px;
+}
+.images img {
+  width: 75px;
+  height: 75x;
+  margin: 10px;
 }
 
 /* Individual portfolio item styles */
